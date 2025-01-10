@@ -1,8 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    cout << "Hello, Dum Dum!" << endl;
+void increment(int &num) {  // & indicates pass-by-reference
+    num += 1;
+    cout << "Inside function: " << num << endl;
+}
+
+int main() {
+    int value = 10;
+    increment(value);  // Pass-by-reference
+    cout << "Outside function: " << value << endl;  // Output: 11
     return 0;
 }
