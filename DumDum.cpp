@@ -10,7 +10,8 @@ void increment(int &num)
 int main()
 {
     int value = 10;
-    increment(value);                              // Pass-by-reference
-    cout << "Outside function: " << value << endl; // Output: 11
+    increment(value);  // Pass-by-reference
+    cout << "Outside function: " << value << endl;  // Output: 11
+    cout << "Inside B1" << endl;
     return 0;
 }
